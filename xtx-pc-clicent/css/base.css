@@ -36,7 +36,7 @@ a {
 }
 a:hover {
   color: #333;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* 设置img的垂直对齐方式为居中对齐，去除img默认下间隙 */
@@ -59,15 +59,6 @@ input, textarea, button, select, a {
   overflow: hidden;
 }
 
-/* 左浮动 */
-.fl {
-  float: left;
-}
-
-/* 右浮动 */
-.fr {
-  float: right;
-}
 
 /* 双伪元素清除法 */
 .clearfix::before,

@@ -1,1 +1,39 @@
 /* 各个页面相同的css */
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 快捷菜单 */
+.shortcut{
+    background-color: #333;
+}
+.shortcut .wrapper{
+    height: 52px;
+}
+.shortcut ul{
+    float: right;
+}
+.shortcut ul li{
+    float: left;
+    font-size: 14px;
+    line-height: 52px;
+    color: #666;
+}
+.shortcut ul li a{
+    padding: 0 16px;
+    color: #dcdcdc;
+}
+.shortcut ul li a:hover{
+    color: #27bb9a;
+}
+.shortcut ul li .moblie::before{
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 18px;
+    margin-right: 8px;
+    /* 或者给最后一个li中放一个span标签，添加精灵图 */
+    background:url(../images/sprites.png) no-repeat -160px -70px;
+    vertical-align: middle;
+}
