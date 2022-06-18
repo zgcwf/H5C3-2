@@ -82,7 +82,93 @@
     margin-right: 16px;
     background-color: rgba(255,255,255,.4);
     border-radius: 50%;
+    cursor: pointer;
 }
 .banner .wrapper ol li.active{
     background-color: #fff;
+}
+/* 新鲜好物 */
+.goods .hd{
+    position: relative;
+    height: 29px;
+    margin: 48px 0 37px 0;
+}
+.goods .hd h3{
+    float: left;
+    height: 29px;
+    font-size: 29px;
+    /* 清除默行高，取消上下间距 */
+    line-height: 1;
+    font-weight: normal;
+    color: #333;
+}
+.goods .hd h3 span{
+    margin: 11px 0 2px 34px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+}
+.goods .hd a{
+    float: right;
+    margin: 11px 20px 2px 0;
+    line-height: 1;
+    font-size: 16px;
+    color: #999;
+}
+.goods .hd a::after{
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 2px;
+    width: 7px;
+    height: 13px;
+    background: url(../images/sprites.png) no-repeat 0 -110px;
+}
+.goods .bd ul li{
+    position: relative;
+    float: left;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 1;
+}
+.goods .bd ul li:nth-child(4n){
+    margin-right: 0;
+}
+.goods .bd ul li img{
+    width: 100%;
+}
+.goods .bd  li .news{
+    position: absolute;
+    top: 18px;
+    left: 17px;
+    width: 28px;
+	height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 2px;
+}
+.goods .bd  li .news span{
+    display: block;
+    width: 18px;
+    height: 36px;
+    margin: 7px 6px 8px 4px;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: normal;
+    color: #27ba9b;
+}
+.goods .bd  li h3{
+    margin: 22px 0 19px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+}
+.goods .bd  li .money{
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.goods .bd  li .money span{
+    font-size: 23px;
 }
