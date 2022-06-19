@@ -200,3 +200,223 @@
     padding: 0 6px;
     color: #999;
 }
+/*  提示   */
+  /*  <!-- 客户服务 -->  */
+.tips .customer{
+    position: relative;
+    float: left;
+    width: 192px;
+	height: 143px;
+    margin: 79px 0 79px 60px;
+    line-height: 1;
+}
+.tips .customer dt{
+    text-align: center;
+    color: #999;
+}
+.tips .customer dd:first-of-type{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 93px;
+	height: 92px;
+	border: solid 1px #eee;
+    text-align: center;
+}
+.tips .customer dd:first-of-type::before{
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 32px;
+    width: 29px;
+	height: 27px;
+    background: url(../images/sprites.png) no-repeat -205px -70px;
+
+}
+.tips .customer dd:first-of-type p{
+    position: absolute;
+    top: 59px;
+    left: 18px;
+    font-size: 14px;
+    color: #999;
+}
+
+.tips .customer dd:last-of-type{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 93px;
+	height: 92px;
+	border: solid 1px #eee;
+    text-align: center;
+}
+.tips .customer dd:last-of-type::before{
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 32px;
+    width: 29px;
+	height: 27px;
+    background: url(../images/sprites.png) no-repeat -300px -70px;
+
+}
+.tips .customer dd:last-of-type p{
+    position: absolute;
+    top: 59px;
+    left: 18px;
+    font-size: 14px;
+    color: #999;
+}
+/* <!-- 关注我们 --> */
+.tips .focus{
+    position: relative;
+    float: left;
+    width: 193px;
+    height: 143px;
+    margin: 79px 93px 79px 118px;
+    line-height: 1;
+}
+.tips .focus dt{
+    text-align: center;
+    color: #999;
+}
+.tips .focus dd:first-of-type{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 93px;
+	height: 92px;
+	border: solid 1px #eee;
+    text-align: center;
+}
+.tips .focus dd:first-of-type::before{
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 32px;
+    width: 36px;
+	height: 29px;
+    background: url(../images/sprites.png) no-repeat -249px -14px;
+
+}
+.tips .focus dd:first-of-type p{
+    position: absolute;
+    top: 59px;
+    left: 29px;
+    font-size: 14px;
+    color: #999;
+}
+
+.tips .focus dd:last-of-type{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 93px;
+	height: 92px;
+	border: solid 1px #eee;
+    text-align: center;
+}
+.tips .focus dd:last-of-type::before{
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 32px;
+    width: 36px;
+	height: 29px;
+    background: url(../images/sprites.png) no-repeat -299px -14px;
+
+}
+.tips .focus dd:last-of-type p{
+    position: absolute;
+    top: 59px;
+    left: 34px;
+    font-size: 14px;
+    color: #999;
+}
+/*  <!-- 下载APP --> */
+.tips .download{
+    position: relative;
+    float: left;
+    width: 241px;
+    height: 156px;
+    margin: 79px 33px 79px 0;
+    line-height: 1;
+}
+.tips .download dt{
+    text-align: center;
+    color: #999;
+}
+.tips .download .qrcode{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 116px;
+	height: 116px;
+	border: solid 1px #eee;
+    text-align: center;
+}
+.tips .download .qrcode img{
+    width: 100%;
+}
+.tips .download .info{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 116px;
+	height: 116px;
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+}
+.tips .download .info p:first-child{
+    margin-top: 13px;
+}
+.tips .download .info p:nth-child(2){
+    margin-top: 8px;
+}
+.tips .download .info a{
+    position: absolute;
+    top: 67px;
+    right: 0;
+    width: 103px;
+	height: 32px;
+	background-color:#27ba9b;
+    line-height: 32px;
+    color: #fff;
+}
+.tips .border{
+    float: left;
+    width: 2px;
+	height: 189px;
+    margin-top: 70px;
+    background-color: #f2f2f2;
+}
+/* <!-- 服务热线 --> */
+.tips .tel{
+    position: relative;
+    float: left;
+    width: 160px;
+	height: 122px;
+    margin: 79px 0 79px 74px;
+    line-height: 1;
+}
+.tips .tel dt{
+    text-align: center;
+    color: #999;
+}
+.tips .tel dd p:first-child{
+    position: absolute;
+    top: 74px;
+    left: 5px;
+    font-size: 22px;
+    font-family: PingFangSC-Semibold;;
+    color: #666;
+}
+.tips .tel dd p:last-child{
+    position: absolute;
+    top: 108px;
+    left: 4px;
+    font-size: 15px;
+    font-family: PingFangSC-Light;
+    color: #999;
+}
