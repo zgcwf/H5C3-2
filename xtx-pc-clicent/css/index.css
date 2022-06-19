@@ -109,16 +109,14 @@
     color: #999;
 }
 /* 查看全部通用css样式 */
-.goods .hd>a,
-.fresh .hd>a{
+.goods .hd>a{
     float: right;
     margin: 10px 20px 0 0;
     line-height: 1;
     font-size: 16px;
     color: #999;
 }
-.goods .hd>a::after,
-.fresh .hd>a::after{
+.goods .hd>a::after{
     content: '';
     position: absolute;
     top: 12px;
@@ -191,9 +189,22 @@
     font-size: 29px;
     font-weight: normal;
 }
+
 .fresh .hd>a{
     float: right;
-    margin-left: 59px;
+    margin: 10px 20px 0 59px;
+    line-height: 1;
+    font-size: 16px;
+    color: #999;
+}
+.fresh .hd>a::after{
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    width: 7px;
+    height: 13px;
+    background: url(../images/sprites.png) no-repeat 0 -110px;
 }
 .fresh .hd  ul{
     float: right;
@@ -292,3 +303,116 @@
 .fresh .bd .right .list li:hover .find{
     bottom: 0;
 }
+
+/* 最新专题  */
+.topic{
+    overflow: hidden;
+    height: 512px;
+    margin-top: 35px;
+    background-color: #f5f5f5;
+    line-height: 1;
+}
+.topic .hd{
+    position: relative;
+    height: 44px;
+    margin: 44px 0 27px;
+}
+.topic .hd h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+.topic .hd>a{
+    float: right;
+    margin: 28px 20px 0 0;
+    color: #999;
+}
+.topic .hd>a::after{
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 1px;
+    width: 7px;
+	height: 13px;
+    background: url(../images/sprites.png) no-repeat 0 -110px;
+}
+.topic .bd li{
+    position: relative;
+    float: left;
+    margin-right: 14px;
+    width: 404px;
+    height: 356px;
+}
+.topic .bd li:last-child{
+    margin-right: 0;
+}
+.topic .bd li img{
+    width: 404px;
+    height: 288px;
+    background-color: #fff;
+}
+.topic .bd li .info h3{
+    position: absolute;
+    top: 222px;
+    left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+.topic .bd li .info .type{
+    position: absolute;
+    top: 255px;
+    left: 14px;
+    color: #999;
+}
+.topic .bd li .info .price{
+    position: absolute;
+    top: 233px;
+    right: 15px;
+    width: 81px;
+	height: 27px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 27px;
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.topic .bd li .info .price span{
+    font-size: 14px;
+}
+.topic .interact {
+    height: 67px;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 67px;
+  }
+.topic .interact span:nth-child(1) {
+    margin-left: 17px;
+  }
+.topic .interact span:nth-child(2) {
+    margin-left: 24px;
+  }
+.topic .interact span:nth-child(3) {
+    float: right;
+    margin-right: 18px;
+  }
+.topic .interact span::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('../images/sprites.png') no-repeat;
+    vertical-align: middle;
+  }
+  
+  .topic .interact span:nth-child(1)::before {
+    background-position: -119px -109px;
+  }
+  
+  .topic .interact span:nth-child(2)::before {
+    background-position: -159px -109px;
+  }
+  
+  .topic .interact span:nth-child(3)::before {
+    background-position: -199px -109px;
+  }
