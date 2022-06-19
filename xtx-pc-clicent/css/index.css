@@ -93,7 +93,7 @@
     height: 29px;
     margin: 48px 0 37px 0;
 }
-.goods .hd h3{
+.goods .hd h2{
     float: left;
     height: 29px;
     font-size: 29px;
@@ -102,23 +102,26 @@
     font-weight: normal;
     color: #333;
 }
-.goods .hd h3 span{
+.goods .hd h2 span{
     margin: 11px 0 2px 34px;
     font-size: 16px;
     font-weight: 400;
     color: #999;
 }
-.goods .hd a{
+/* 查看全部通用css样式 */
+.goods .hd>a,
+.fresh .hd>a{
     float: right;
-    margin: 11px 20px 2px 0;
+    margin: 10px 20px 0 0;
     line-height: 1;
     font-size: 16px;
     color: #999;
 }
-.goods .hd a::after{
+.goods .hd>a::after,
+.fresh .hd>a::after{
     content: '';
     position: absolute;
-    top: 14px;
+    top: 12px;
     right: 2px;
     width: 7px;
     height: 13px;
@@ -133,6 +136,10 @@
     margin-right: 8px;
     text-align: center;
     line-height: 1;
+}
+.goods .bd ul li:hover{
+    top: -3px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
 }
 .goods .bd ul li:nth-child(4n){
     margin-right: 0;
@@ -171,4 +178,117 @@
 }
 .goods .bd  li .money span{
     font-size: 23px;
+}
+/* 生鲜 */
+.fresh .hd {
+    position: relative;
+    height: 28px;
+    margin: 34px 0 29px 0;
+    line-height: 1;
+}
+.fresh .hd  h2{
+    float: left;
+    font-size: 29px;
+    font-weight: normal;
+}
+.fresh .hd>a{
+    float: right;
+    margin-left: 59px;
+}
+.fresh .hd  ul{
+    float: right;
+    margin-top: 8px;
+    font-size: 16px;
+}
+.fresh .hd  ul li{
+    float: left;
+    margin-left: 6px;
+    padding: 2px 7px;
+}
+.fresh .hd  ul li:hover{
+    background-color: #27ba9b;
+}
+.fresh .bd .left{
+    float: left;
+    width: 240px;
+	height: 617px;
+}
+.fresh .bd .left img{
+    margin: 5px 0 2px 0;
+}
+.fresh .bd .right {
+    float: left;
+    width: 1000px;
+}
+.fresh .bd .right .list{
+    margin-top: 5px;
+}
+.fresh .bd .right .list li{
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 242px;
+	height: 304px;
+    margin: 0 0 3px 8px;
+    border:2px solid transparent;
+}
+.fresh .bd .right .list li:nth-child(n+5){
+    margin-bottom: 1px;
+}
+.fresh .bd .right .list li .image{
+    width: 184px;
+	height: 184px;
+    margin: 8px 29px 12px;
+}
+.fresh .bd .right .list li .image img{
+    width: 100%;
+}
+.fresh .bd .right li .info{
+    margin-left: 29px;
+    line-height: 1.25;
+}
+.fresh .bd .right li .info h3{
+    font-size: 16px;
+    font-weight: normal;
+}
+.fresh .bd .right li .info .price{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #9a2e1f;
+}
+.fresh .bd .right li .info .price span{
+    font-size: 17px;
+}
+.fresh .bd .right .list li .find{
+    position: absolute;
+    left: 0;
+    bottom: -84px;
+    width: 242px;
+	height: 84px;
+    background-color: #27ba9b;
+    line-height: 1;
+    text-align: center;
+    transition: bottom .3s;
+}
+.fresh .bd .right .list li .find p:first-child{
+    margin: 19px 0 7px ;
+    font-size: 18px;
+    color: #ffffff;
+}
+.fresh .bd .right .list li .find p:nth-child(2){
+    margin: 0 auto;
+    width: 125px;
+	height: 2px;
+    background-color: #a9dbcc;
+}
+.fresh .bd .right .list li .find p:last-child{
+    margin: 8px 0 17px 0;
+    font-size: 13px;
+    color: #fff;
+}
+.fresh .bd .right .list li:hover{
+    border-color: #27ba9b;
+}
+.fresh .bd .right .list li:hover .find{
+    bottom: 0;
 }
